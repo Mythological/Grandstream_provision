@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- BroadSoft XML Provisioning Configuration -->
+<gs_provision version="1">
+<mac>000b82c3b960</mac>
+  <config version="2">
+<!--###############################################################################################-->
+<!--####            Configuration Template Exmaple for testing the converting tool             ####-->
+<!--###############################################################################################-->
+<!--####################################################################-->
+<!--## Example P values                                               ##-->
+<!--####################################################################-->
+<!--# Admin password for web interface-->
+<!--# String: a-z, A-Z, 0-9-->
+    <P2>PASSWORD</P2>
+
+<!--# Config Server Path-->
+<!--# String-->
+    <P237>172.18.18.250</P237>
+
+<!--# Firmware Server Path-->
+    <P192>172.18.18.250</P192>
+
+<!--# Account Active. 0 - No, 1 - Yes. Default value is 0-->
+<!--# Number: 0, 1-->
+    <P271>1</P271>
+
+<!--# Account Name-->
+    <P270>8532</P270>
+
+<!--# SIP Server-->
+    <P47>172.18.18.250</P47>
+
+<!--# SIP User ID-->
+    <P35>8532</P35>
+
+<!--#Auth ID-->
+    <P36>8532</P36>
+
+<!--# SIP Authenticate Password-->
+    <P34>6ac3</P34>
+
+<!--# Name (Display Name, e.g., John Doe)-->
+    <P3></P3>
+
+<!--# Register Expiration-->
+    <P32>2</P32>
+
+<!--# Subscribe Expiration-->
+    <P26051>2</P26051>
+
+<!--# Prefered Vocoder1-->
+    <P57>8</P57>
+
+<!--# Prefered Vocoder2-->
+    <P58>0</P58>
+
+<!--# IPv4 Address. 0 - DHCP, 1 - Static IP, 2 - PPPoE. Default is 0-->
+<!--# Number: 0, 1, 2-->
+<!--# Mandatory-->
+    <P8>0</P8>
+
+<!--# Layer 2 QoS. 802.1Q/VLAN Tag (VLAN classification for RTP). Default is 0-->
+<!--# Number: 0 - 4094-->
+    <P51>0</P51>
+
+<!--# Layer 2 QoS. 802.1p priority value (0 - 7). Default is 0-->
+<!--# Number: 0 - 7-->
+    <P87>0</P87>
+
+<!--# LLDP-->
+    <P1684>1</P1684>
+
+<!--# Configuration via Keypad-->
+    <P1357>2</P1357>
+
+<!--#Language-->
+    <P1362>ru</P1362>
+
+<!--#Time Zone-->
+    <P64>MSK-3</P64>
+
+<!--#Date Display Format-->
+    <P102>2</P102>
+
+<!--#Time Display Format-->
+    <P122>1</P122>
+
+<!--#Tel URI-->
+    <P63>1</P63>
+
+<!--# DND Call Feature ON-->
+    <P2544>*78</P2544>
+    <P2344>*78</P2344>
+<!--# DND Call Feature OFF-->
+    <P2545>*79</P2545>
+    <P2345>*79</P2345>
+
+<!--#Config Upgrade Via-->
+    <P212>0</P212>
+
+<!--#Firmware Upgrade Via-->
+    <P6767>0</P6767>
+
+<!--# In-call Dial Number on pressing transfer key-->
+    <P1525>*2</P1525>
+
+<!--#Line Keys-->
+    <P1465></P1465>
+    <P1466></P1466>
+    <P1363>0</P1363>
+    <P1365>10</P1365>
+    <P1467>*4</P1467>
+    <P1468>*4</P1468>
+<!--#Softkey-->
+    <P2987>10</P2987>
+    <P2988>0</P2988>
+    <P2989>#4</P2989>
+    <P2990>*4</P2990>
+
+<!--# Allow DHCP Option 43 and Option 66 to override server. 0 - No, 1 - Yes. Default is 1-->
+    <P145>1</P145>
+
+<!--# Firmware Upgrade and Provisioning-->
+<!--# 0 - Always Check For New Firmware-->
+<!--# 1 - Check New Firmware only when F/W pre/suffix changes-->
+<!--# 2 - Always Skip the Firmware Check-->
+    <P238>0</P238>
+
+
+        </config>
+</gs_provision>
+                                         
