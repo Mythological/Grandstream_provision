@@ -1,0 +1,15 @@
+create database Prod1 character set utf8
+
+use Prod1;
+
+create table users ( id_user int (10) NOT NULL AUTO_INCREMENT, name varchar(200) NOT NULL, ext int(50) NOT NULL UNIQUE, ip3 int(50) NOT NULL, ip4 int(50) NOT NULL, email varchar(50) DEFAULT NULL, pickup varchar(50) DEFAULT NULL, callGroup varchar(50) DEFAULT NULL, ring varchar(50) DEFAULT NULL, mac varchar(50) DEFAULT NULL, secret varchar(150) DEFAULT NULL UNIQUE, model int(50) NOT NULL, DID varchar(50) NOT NULL, PRIMARY KEY (id_user) );
+
+sudo python Insert_Ext_from_XLSX.py
+
+sudo python Create_MAC.py
+
+cp -rp Create_CFG_Grandstream/MAC.csv Create_CFG_Grandstream/1610/
+
+cd Create_CFG_Grandstream/
+
+sudo bash GS_Config_TXT_to_XML_v1.8_GXP1610.sh 1610/ Config_Example_GXP1610.txt MAC.csv
