@@ -1,0 +1,5 @@
+#-*- coding: utf-8 -*-
+
+import pandas as pd
+data_xls = pd.read_excel('Pol_Sab_import.xlsx', 'Sheet', index_col=None)
+data_xls.to_csv("filename.csv",index=False,header=None ,encoding='utf-8')                                                                                     
