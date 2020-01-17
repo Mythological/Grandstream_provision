@@ -1,0 +1,25 @@
+#!/usr/bin/python3
+
+from selenium import webdriver
+import time
+
+driver = webdriver.Firefox()  # Or Chrome(), or Ie(), or Opera()
+
+def site_login(x):
+    driver.get("http://192.168.0.%d" % x)
+    time.sleep(3)
+    driver.find_element_by_css_selector(".gwt-TextBox").click()
+    driver.find_element_by_css_selector(".gwt-TextBox").send_keys("admin")
+    driver.find_element_by_css_selector(".gwt-PasswordTextBox").send_keys("admin")
+    driver.find_element_by_css_selector(".gwt-Button").click()
+    time.sleep(1)
+    driver.find_element_by_name("reboot").click()
+    driver.find_element_by_css_selector(".green").click()
+
+A = (155,154,130,210,191,99,95,35,204,168,209,109,110,166,111,170)
+
+for i in A:
+    try:
+        site_login(i)
+    except:
+        pass
