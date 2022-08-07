@@ -2,8 +2,11 @@
 
 from selenium import webdriver
 import time
+from selenium.webdriver.firefox.options import Options
 
-driver = webdriver.Firefox()  # Or Chrome(), or Ie(), or Opera()
+options = Options()
+options.headless = True
+driver = webdriver.Firefox(options = options)  # Or Chrome(), or Ie(), or Opera()
 
 def site_login(x):
     driver.get("http://192.168.0.%d" % x)
@@ -23,3 +26,5 @@ for i in A:
         site_login(i)
     except:
         pass
+
+driver.close()
